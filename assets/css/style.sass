@@ -1,0 +1,1261 @@
+@import "fonts.css"
+@import "mixin"
+$white: #ffffff
+$pink: #f9f5f4
+$roze: #f9f5f4
+$black: #212121
+$gray1: #4d5d65
+$gray2: #35454d
+$orange: #ee8815
+$orange1: #d17315
+.text-title
+  font: 600 20px open_sans
+  color: $black
+  text-transform: uppercase
+  letter-spacing: -0.8px
+  margin: 28px 0 22px 0
+.text
+  font: 600 14px open_sans
+  color: $black
+  text-align: left
+  letter-spacing: -0.5px
+  margin: 0 0 5px
+  line-height: 21px
+.custom-container
+  width: 76.5%
+  margin: 0 auto
+  @media all and (max-width: 991px)
+    width: 74.5%
+.phone-number
+  color: $white
+  font: 600 21px open_sans
+  margin: 87px 0 0 20px
+.call-us
+  position: relative
+  color: $white
+  font: 14px open_sans
+  text-transform: uppercase
+  margin: 25px
+  padding-right: 35px
+  &:after
+    content: ''
+    position: absolute
+    background: url("../images/icon-pointer.png") no-repeat
+    height: 31px
+    width: 18px
+    top: 50%
+    right: 0
+    @include transform(translateY(-50%))
+html
+  position: relative
+  min-height: 100%
+body
+  margin-bottom: 130px
+  @media all and (max-width: 991px)
+    margin-bottom: 195px
+  @media all and (max-width: 345px)
+    margin-bottom: 220px
+.nav-top
+  padding: 0 0 7px 0
+  background: $gray1
+  opacity: 0.9
+  @media all and (max-width: 767px)
+    opacity: 1
+    padding-bottom: 30px
+    background: none
+  @include keyframes(hide_menu)
+    0%
+      opacity: 1
+    50%
+      opacity: 0.5
+    100%
+      opacity: 0
+  .mobile-menu
+    margin-top: 26px
+    height: 50px
+    display: none
+    position: relative
+    @media all and (max-width: 767px)
+      @include flexbox()
+    .title
+      font: 500 20px open_sans
+      color: $white
+      text-transform: uppercase
+      display: none
+      margin-left: 35px
+  .menu-btn
+    position: absolute
+    @include flex-direction(column)
+    @include justify-content(space-between)
+    right: 13px
+    top: 15px
+    height: 20px
+    @media all and (max-width: 767px)
+      @include flexbox()
+  .icon-bar
+    height: 3px
+    width: 24px
+    background: $white
+    @include box-shadow(0px 0px 1px 1px rgba(238,138,21,0.2))
+  .nav-custom
+    width: 100%
+    margin: 0
+    @include flexbox()
+    @include justify-content(space-around)
+    @include align-items(stretch)
+    @media all and (max-width: 991px)
+      @include flex-wrap(wrap)
+    @media all and (max-width: 767px)
+      display: none
+      background: $orange
+      padding-bottom: 20px
+      @include animation(hide_menu 0.2s linear forwards)
+    .menu-element
+      border-top: 7px solid rgba(0,0,0,0)
+      padding: 8px 0
+      @include flexbox()
+      @include justify-content(center)
+      @media all and (min-width: 992px)
+        max-width: 155px
+      @media all and (max-width: 991px)
+        width: 20%
+        @include justify-content(flex-start)
+      @media all and (max-width: 767px)
+        width: 50%
+        border: none
+        padding: 17px 0 5px 35px
+      &:nth-child(5)
+        @media all and (max-width: 991px)
+          width: 44%
+        @media all and (max-width: 767px)
+          width: 50%
+          @include justify-content(flex-start)
+          a
+            max-width: 160px
+            text-align: left
+            letter-spacing: -0.5px
+      &:nth-child(6)
+        @media all and (max-width: 991px) and (min-width: 768px)
+          width: 22%
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7)
+        @media all and (max-width: 991px)
+          @include justify-content(center)
+          padding-top: 0
+        @media all and (max-width: 767px)
+          @include justify-content(flex-start)
+          padding: 17px 0 5px 35px
+      &:nth-child(7)
+        @media all and (max-width: 991px)
+          padding-left: 18px
+        @media all and (max-width: 767px)
+          padding: 12px 0 5px 35px
+          width: 100%
+      a
+        font: 300 10px open_sans
+        color: $white
+        text-transform: uppercase
+        text-align: center
+        padding: 7px 25px
+        @include flexbox()
+        @include align-items(center)
+        &:hover,
+        &:focus
+          background: none
+        @media all and (max-width: 991px)
+          padding: 7px 0
+          font-size: 13px
+        @media all and (max-width: 767px)
+          font-size: 15px
+          font-weight: 400
+          display: block
+      &.active
+        @media all and (min-width: 992px)
+          border-top: 7px solid $orange
+        a
+          @media all and (max-width: 991px)
+            border: 2px solid $orange
+            padding: 5px 25px
+          @media all and (max-width: 767px)
+            padding: 0
+            height: 25px
+          span
+            @media all and (max-width: 767px)
+              border-bottom: solid 1px $white
+  &.open
+    @include keyframes(open)
+      0%
+        opacity: 0
+      50%
+        opacity: 0.5
+      100%
+        opacity: 1
+    .nav-custom
+      @include flexbox()
+    .mobile-menu
+      @include flexbox()
+      @include  align-items(center)
+      background: $orange1
+      .title
+        display: block
+    .nav-custom
+      @include animation(open 0.2s linear forwards)
+.section-1
+  position: relative
+  width: 100%
+  height: 570px
+  background: url("../images/background-section-1.png") 50% no-repeat
+  @include background-size(cover)
+  @media all and (max-width: 767px)
+    height: 460px
+  .img-left-section-1
+    position:  absolute
+    background: $orange
+    height: 59%
+    width: 20px
+    top: 50%
+    left: 99px
+    @include transform(translateY(-50%))
+    @include box-shadow(0px 0px 29px 2px rgba(0,0,0,0.3))
+    @media all and (max-width: 991px)
+      top: 56.3%
+      left: 36px
+    @media all and (max-width: 767px)
+      left: 0
+      width: 10px
+      top: 39%
+      height: 66%
+    &:before
+      content: ''
+      position: absolute
+      background: url("../images/img-left-section-1.png") 50% no-repeat
+      position: absolute
+      top: 50%
+      left: -99px
+      @include transform(translateY(-50%))
+      height: 128%
+      width: 100px
+      @include box-shadow(0px 0px 29px 2px rgba(0,0,0,0.3))
+      @media all and (max-width: 991px)
+        width: 36px
+        left: -36px
+      @media all and (max-width: 767px)
+        width: 0
+        left: 0
+  .text-right-section-1
+    position:  absolute
+    background: $orange
+    height: 59%
+    width: 180px
+    top: 50%
+    right: 99px
+    @include flexbox()
+    @include flex-direction(column)
+    @include justify-content(space-between)
+    @include transform(translateY(-50%))
+    @include box-shadow(0px 0px 29px 2px rgba(0,0,0,0.3))
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      background: url("../images/icon-phone.png") no-repeat
+      @include background-size(cover)
+      height: 37px
+      width: 37px
+      top: 25px
+      left: 20px
+    @media all and (max-width: 991px)
+      top: 56.5%
+      right: 50px
+    @media all and (max-width: 767px)
+      width: 50px
+      right: 0
+      top: 39%
+      height: 66%
+    &.right
+      .phone-number
+        @media all and (max-width: 767px)
+          display: none
+      .call-us
+        @media all and (max-width: 767px)
+          display: none
+      &:before
+        @media all and (max-width: 767px)
+          display: none
+    &.bottom
+      display: none
+      @media all and (max-width: 767px)
+        position: inherit
+        background: none
+        display: block
+        height: auto
+        width: 100%
+        padding-left: 42px
+        margin-top: 33px
+        box-shadow: none
+        &:before
+          top: 5px
+          left: 0
+          @include background-size(cover)
+          height: 25px
+          width: 25px
+        .phone-number
+          display: inline-block
+          margin: 0
+          line-height: 35px
+          letter-spacing: -0.5px
+        .call-us
+          margin: 0
+          display: inline-block
+          float: right
+          max-width: 107px
+          line-height: 17px
+          padding-right: 25px
+          &:after
+            top: 17px
+  .img-right-section-1
+    position: absolute
+    background: url("../images/img-right-section-1.png") 50% no-repeat
+    top: 50%
+    right: 0
+    @include transform(translateY(-50%))
+    height: 76%
+    width: 190px
+    @include box-shadow(0px 0px 29px 2px rgba(0,0,0,0.3))
+    z-index: 0
+    @media all and (max-width: 991px)
+      top: 56.5%
+      width: 135px
+    @media all and (max-width: 767px)
+      display: none
+  .main-text-content
+    padding: 110px 359px 1% 200px
+    height: 100%
+    @media all and (max-width: 991px)
+      padding: 140px 250px 1% 90px
+    @media all and (max-width: 767px)
+      padding: 26px 15px 1% 35px
+    @media all and (max-width: 330px)
+      padding: 26px 5px 1% 35px
+    .header-text
+      font: 700 italic 28px  open_sans
+      color: $white
+      text-align: left
+      text-transform: uppercase
+      @media all and (max-width: 767px)
+        font-size: 21px
+    .logo
+      height: 100px
+      width: 300px
+      margin-top: 30px
+      @media all and (max-width: 767px)
+        height: 80px
+        width: 230px
+        margin-top: 20px
+  .who-are-we
+    position: relative
+    padding-left: 60px
+    margin-top: 70px
+    @media all and (max-width: 991px)
+      margin-top: 40px
+    @media all and (max-width: 767px)
+      padding-left: 0
+      margin-top: 30px
+    &:before
+      content: ''
+      position: absolute
+      background: url("../images/icon-pointer.png") no-repeat
+      height: 31px
+      width: 18px
+      left: 0
+      @include transform(rotate(90deg))
+      @media all and (max-width: 767px)
+        display: none
+    .title
+      font: 500 20px  open_sans
+      color: $white
+      margin-bottom: 20px
+      text-transform: uppercase
+      @media all and (max-width: 767px)
+        margin-bottom: 10px
+    .description
+      font: 14px  open_sans
+      color: $white
+      line-height: 22px
+      margin-top: 30px
+      letter-spacing: -0.3px
+      max-width: 495px
+      @media all and (max-width: 991px)
+        font-size: 15px
+      @media all and (max-width: 767px)
+        margin-top: 10px
+        font-size: 14px
+        line-height: 23px
+        max-width: 85%
+.home-page
+  .section-2
+    background: $orange
+    @media all and (max-width: 767px)
+      background: $white
+    .custom-container
+      @media all and (max-width: 767px)
+        width: 100%
+    .benefits
+      background: $orange
+      list-style: none
+      text-transform: uppercase
+      @include flexbox()
+      @include justify-content(space-between)
+      @include align-items(center)
+      min-height: 100px
+      padding: 0
+      @media all and (max-width: 767px)
+        background: $white
+        @include flex-wrap(wrap)
+      li
+        background: $orange
+        @media all and (max-width: 767px)
+          min-height: 78px
+          margin-top: 8px
+          width: 100%
+          @include flexbox()
+          @include justify-content(center)
+          @include align-items(center)
+        .benefits-container
+          position: relative
+          font: 11px  open_sans
+          color: $white
+          padding-left: 85px
+          text-align: left
+          @media all and (max-width: 767px)
+            display: inline-block
+            font-size: 20px
+            font-weight: 500
+            padding-left: 110px
+          &:before
+            position: absolute
+            top: 50%
+            left: 0
+            @include transform(translateY(-50%))
+        &:nth-child(1)
+          .benefits-container
+            &:before
+              content: ''
+              background: url("../images/Free%20Measure.png")no-repeat
+              height: 46px
+              width: 66px
+        &:nth-child(2)
+          .benefits-container
+            @media all and (max-width: 767px)
+              margin-left: -30px
+            &:before
+              content: ''
+              background: url("../images/48Hour.png")no-repeat
+              height: 56px
+              width: 61px
+        &:nth-child(3)
+          .benefits-container
+            @media all and (max-width: 767px)
+              margin-left: 4px
+            &:before
+              content: ''
+              background: url("../images/We_also_service_garage_doors.png")no-repeat
+              height: 57px
+              width: 60px
+  .section-3
+    padding-bottom: 28px
+    .top-indent
+      @media all and (max-width: 991px)
+        margin-top: 30px
+    .read-more-container
+      .read-more
+        color: $orange
+        font: 14px open_sans
+        text-transform: uppercase
+        margin-top: 30px
+        display: none
+        @media all and (max-width: 767px)
+          display: block
+      .text
+        @media all and (max-width: 767px)
+          display: none
+      &.open
+        .text
+          @media all and (max-width: 767px)
+            display: block
+  .section-4
+    background: $orange
+    @include flexbox()
+    @include  justify-content(flex-end)
+    max-height: 270px
+    @media all and (max-width: 767px)
+      max-height: 540px
+      @include flex-direction(column-reverse)
+    .video-image
+      width: 38.5%
+      height: 270px
+      margin-right: -3px
+      position: relative
+      display: block
+      @media all and (max-width: 991px)
+        width: 50%
+        margin-right: 0
+      @media all and (max-width: 767px)
+        width: 100%
+      img
+        width: 100%
+        height: 100%
+    .video-container
+      position: absolute
+      @include flexbox()
+      @include flex-direction(column)
+      @include justify-content(center)
+      @include align-items(center)
+      height: 100%
+      width: 100%
+      top: 0
+      left: 0
+      cursor: pointer
+      .video-btn
+        background: url("../images/video-play.png") no-repeat
+        height: 61px
+        width: 60px
+      .video-title
+        text-transform: uppercase
+        color: $white
+        font: 500 15px open_sans
+        margin-top: 10px
+    .section-video
+      width: 38.5%
+      margin-right: -3px
+      //visibility: hidden
+      display: none
+      height: 270px
+      @media all and (max-width: 991px)
+        width: 50%
+        margin-right: 0
+
+      @media all and (max-width: 767px)
+        width: 100%
+    .section-5
+      position: relative
+      width: 50%
+      height: 270px
+      @media all and (max-width: 767px)
+        width: 100%
+      .section-img
+        width: 100%
+        height: 100%
+    .video-description
+      position: absolute
+      top: 0
+      width: 100%
+    .text-title
+      padding-left: 40px
+      margin: 23px 0 18px 0
+      @media all and (max-width: 767px)
+        width: 82%
+        margin: 23px auto 18px auto
+        padding-left: 23px
+    .list-description
+      list-style: none
+      padding-left: 20px
+      max-width: 300px
+      @media all and (max-width: 767px)
+        max-width: 74.5%
+        margin: 0 auto
+        padding-left: 0
+      .text
+        margin-bottom: 25px
+        @media all and (max-width: 380px)
+          margin-bottom: 5px
+      li
+        position: relative
+        padding-left: 20px
+        &:before
+          content: ''
+          position: absolute
+          background: $orange
+          border-radius: 50%
+          top: 30%
+          left: 0
+          height: 8px
+          width: 8px
+  .section-6
+    min-height: 170px
+    padding-top: 28px
+    .text-title
+      margin-top: 0
+    .suppliers-container
+      @include flexbox()
+      @include justify-content(space-between)
+      @include align-items(center)
+      @include flex-wrap(wrap)
+      @media all and (max-width: 767px)
+        @include justify-content(center)
+    .suppliers-item
+      @media all and (max-width: 767px)
+        width: 50%
+        margin-bottom: 35px
+        &:nth-child(1)
+          @include flex-order(0)
+        &:nth-child(2)
+          @include flex-order(1)
+        &:nth-child(3)
+          @include flex-order(2)
+        &:nth-child(4)
+          @include flex-order(4)
+        &:nth-child(5)
+          @include flex-order(3)
+      img
+        margin: 0 auto
+  .section-7
+    background: url("../images/SelectionGuide-bg.png") no-repeat
+    @include background-size(cover)
+    min-height: 435px
+    @media all and (max-width: 1015px)
+      padding-bottom: 6px
+      min-height: 455px
+    .selection-guid-description
+      font: 14px open_sans
+      color: $white
+      padding-top: 23px
+      @media all and (max-width: 991px)
+        font-size: 15px
+    .rotate-vertical
+      float: right
+      -webkit-transform-origin: left top
+      -moz-transform-origin: left top
+      -o-transform-origin: left top
+      transform-origin: left top
+    .vertical-body-horizontal
+      -webkit-transform: translateX(0%) rotate(-90deg)
+      -moz-transform: translateX(0%) rotate(-90deg)
+      -o-transform: translateX(0%) rotate(-90deg)
+      transform: translateX(0%) rotate(-90deg)
+    .custom-container-accordion
+      width: 76.5%
+      margin: 25px auto 0 auto
+      position: relative
+      @media all and (max-width: 991px)
+        width: 74.5%
+      @media all and (max-width: 767px)
+        width: 100%
+    .panel-group
+      margin: 0 auto
+      @media all and (min-width: 992px)
+        position: absolute
+        top: 0
+        right: 12px
+      @media all and (min-width: 1468px)
+        top: 18px
+        right: 0
+      @media all and (max-width: 1015px)
+        top: 18px
+      @media all and (max-width: 998px)
+        top: 0
+      @media all and (max-width: 991px)
+        @include flexbox()
+        @include flex-direction(column-reverse)
+      .panel
+        margin-top: 10px
+        margin-bottom: -5px
+        @media all and (max-width: 991px)
+          margin-top: 6px
+    .collapsing
+      -webkit-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8)
+      -moz-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8)
+      -o-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8)
+      transition: height 4s cubic-bezier(0, 1.8, 1, 1.8)
+    .panel-collapse
+      background: rgba(53,69,77,0.7)
+      @include background-size(cover)
+      overflow: hidden
+    .panel-default
+      background: none
+      border: none
+      position: relative
+      filter: contrast(80%)
+      &:nth-child(1)
+        background: url("../images/accordion-bg4.png")no-repeat
+        @include background-size(cover)
+        background-position: 50% 60%
+        @media all and (max-width: 991px)
+          background: url("../images/accordion-bg4-horizontal.png")no-repeat
+          @include background-size(cover)
+          background-position: 50% 60%
+      &:nth-child(2)
+        background: url("../images/accordion-bg3.png")no-repeat
+        @include background-size(cover)
+        background-position: 50%  28%
+        @media all and (max-width: 991px)
+          background: url("../images/accordion-bg3-horizontal.png")no-repeat
+          @include background-size(cover)
+          background-position: 50% 45%
+      &:nth-child(3)
+        background: url("../images/accordion-bg2.png")no-repeat
+        @include background-size(cover)
+        background-position: 50% 76%
+        @media all and (max-width: 991px)
+          background: url("../images/accordion-bg2-horizontal.png")no-repeat
+          @include background-size(cover)
+          background-position: 50% 45%
+      &:nth-child(4)
+        background: url("../images/accordion-bg1.png")no-repeat
+        @include background-size(cover)
+        background-position: 50% 76%
+        @media all and (max-width: 991px)
+          background: url("../images/accordion-bg1-horizontal.png")no-repeat
+          @include background-size(cover)
+          background-position: 50% 60%
+          margin-top: 0
+      @media all and (max-width: 991px)
+        position: relative
+        padding-top: 76px
+      .panel-heading
+        background: none
+        border: none
+        cursor: pointer
+        border-bottom: 6px solid $orange
+        background: rgba(53,69,77,0.7)
+        @include background-size(cover)
+        border-radius: 0
+        margin-bottom: -9px
+        @media all and (max-width: 991px)
+          border-bottom: 0
+          border-top: 6px solid $orange
+          position: absolute
+          top: 0
+          width: 100%
+        @media all and (max-width: 767px)
+          padding: 10px 0
+    .panel-title
+      position: relative
+      height: 50px
+      @media all and (max-width: 767px)
+        width: 80%
+        margin: 0 auto 0 12.75%
+      a
+        position: absolute
+        text-align: left
+        font: 400 29px open_sans
+        text-transform: uppercase
+        color: rgba(255,255,255,0.5)
+        letter-spacing: -0.7px
+        height: 100%
+        width: 100%
+        line-height: 1.8
+        @media all and (min-width: 992px)
+          @include transform(translateX(0%) rotate(-180deg))
+          text-align: right
+        @media all and (max-width: 767px)
+          font-size: 25px
+    .panel-body
+      font: 14px open_sans
+      color: $white
+      padding: 15px 15px 15px 0
+      float: left
+      @media all and (max-width: 991px)
+        padding-left: 15px
+        font-size: 15px
+      @media all and (max-width: 767px)
+        //width: 74.5%
+        margin: 0 auto
+        padding: 15px 12.75%
+        font-size: 14px
+      .text-block
+        margin-bottom: 30px
+        @media all and (max-width: 767px)
+          &:last-of-type
+            margin-bottom: 0
+  .section-8
+    .text
+      font-weight: 400
+      margin-bottom: 30px
+    .list
+      @include flexbox()
+      @include flex-wrap(wrap)
+      margin-bottom: 30px
+      .list-item
+        font: 600 14px open_sans
+        color: $black
+        width: 50%
+        position: relative
+        padding-left: 15px
+        @media all and (max-width: 767px)
+          width: 100%
+        &:before
+          content: ''
+          position: absolute
+          height: 7px
+          width: 7px
+          background: $orange
+          border-radius: 50%
+          @include transform(translateY(-50%))
+          top: 50%
+          left: 0
+.contact-us
+  .section-1
+    position: relative
+    height: 570px
+    @media all and (min-width: 768px)
+      border-bottom: 10px solid $orange
+      background: none
+      margin-top: 10px
+    @media all and (max-width: 767px)
+      margin-bottom: 110px
+    #google-map-1
+      height: 100%
+      width: 100%
+      position: relative
+      overflow: hidden
+      @media all and (max-width: 767px)
+        position: absolute
+        height: 200px
+        margin-top: 460px
+        top: 0
+    .img-left-section-1
+      width: 120px
+      left: 0
+      @media all and (max-width: 767px)
+        width: 10px
+      &:before
+        display: none
+    a[href^="https://maps.google.com/maps"]
+      display : none !important
+    .gm-style-cc
+      display : none
+    .text-right-section-1
+      @media all and (max-width: 767px)
+        width: 180px
+        right: inherit
+        left: 30px
+      &:before
+        top: 135px
+        height: 25px
+        width: 25px
+        @media all and (max-width: 767px)
+          top: 130px
+      .address
+        position: relative
+        font: 15px open_sans
+        color: $white
+        margin: 65px 0 0 20px
+        text-transform: uppercase
+        &:before
+          content: ''
+          background: url("../images/icon-home.png") no-repeat
+          height: 19px
+          width: 21px
+          position: absolute
+          top: -40px
+          left: 0
+      .phone-number
+        margin-top: 15px
+        @media all and (max-width: 767px)
+        margin-top: 40px
+    .block-right-section-1
+      display: none
+      position: absolute
+      width: 50px
+      background: $orange
+      right: 0
+      top: 39%
+      height: 66%
+      @include transform(translateY(-50%))
+      box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3)
+      @media all and (max-width: 767px)
+        display: block
+  .section-2
+    .text
+      margin-bottom: 27px
+.timber-doors,
+.commercial-industrial-doors,
+.roller-door,
+.garage-door-motors,
+.service-repair,
+.sectional-doors
+  .section-1
+    @media all and (min-width: 768px)
+      border-bottom: 10px solid $orange
+    .img-right-section-1
+      @media all and (max-width: 992px)
+        top: 57.5%
+    .img-left-section-1
+      @media all and (max-width: 991px)
+        top: 57.5%
+      @media all and (max-width: 767px)
+        top: 39%
+    .main-text-content
+      @media all and (max-width: 767px)
+        padding-right: 70px
+      .description
+        font: 14px open_sans
+        color: $white
+        margin-top: 35px
+        max-width: 495px
+        @media all and (max-width: 400px)
+          font-size: 12px
+  .contacts
+    display: none
+    .call-us
+      &:after
+        background: none
+    @media all and (max-width: 767px)
+      display: block
+  .objects-container
+    @include flexbox()
+    @include justify-content(flex-start)
+    @include flex-wrap(wrap)
+    position: relative
+    @media all and (max-width: 767px)
+      padding-top: 15px
+    &.custom-container
+      @media all and (max-width: 767px)
+        width: 89%
+    .clyde-num
+      font: 500 21px open_sans
+      color: $orange
+      margin: 0 auto
+      display: none
+      @media all and (max-width: 767px)
+        display: block
+    .owl-nav
+      .owl-prev,
+      .owl-next
+        position: absolute
+        background: url("../images/arrow.png")no-repeat
+        height: 18px
+        width: 11px
+        margin-top: 5px
+      .owl-prev
+        left: 0
+      .owl-next
+        @include transform(rotate(-180deg))
+        right: 0
+    .item-object
+      padding-top: 15px
+      @media all and (max-width: 767px)
+        padding-bottom: 5px
+      .title
+        min-height: 68px
+        background: $orange
+        color: $white
+        text-transform: uppercase
+        font: 600 16px open_sans
+        padding: 12px
+        @media all and (max-width: 991px) and (min-width: 940px)
+          font-size: 14px
+        @media all and (max-width: 940px) and (min-width: 768px)
+          font-size: 12px
+          min-height: 80px
+        br
+          @media all and (max-width: 991px)
+            display: none
+      .object-img
+        width: 100%
+        min-height: 155px
+      .description
+        background: $pink
+        font: 13px open_sans
+        color: $black
+        padding: 25px 12px 45px 12px
+        min-height: 270px
+        letter-spacing: -0.9px
+        @media all and (max-width: 767px)
+          min-height: 160px
+          padding-bottom: 25px
+.roller-door,
+.timber-doors
+  .item-object
+    margin: 0
+    width: 32%
+    @media all and (min-width: 992px)
+      &:not(:nth-child(3n+3))
+        margin-right: 2%
+    @media all and (max-width: 991px) and (min-width: 768px)
+      width: 49%
+      &:not(:nth-child(2n+2))
+        margin-right: 2%
+    @media all and (max-width: 767px)
+      width: 100%
+.commercial-industrial-doors,
+.garage-door-motors,
+.sectional-doors
+  .objects-container
+    &.show-item-object
+      &:before
+        content: ''
+        position: absolute
+        background: rgba(255,255,255, 0.7)
+        width: 100%
+        height: 100%
+        z-index: 1
+  .title
+    position: relative
+    @media all and (min-width: 768px) and (max-width: 991px)
+      padding-right: 40px!important
+  .btn-details
+    background: url("../images/icon-pointer.png") no-repeat
+    height: 31px
+    width: 18px
+    position: absolute
+    right: 10px
+    display: none
+    top: 50%
+    @include transform(translateY(-50%))
+    @media all and (max-width: 991px) and (min-width: 768px)
+      display: block
+  .item-object
+    margin: 0
+    width: 32%
+    .description
+      @media all and (min-width: 768px) and (max-width: 991px)
+        display: none
+    .object-img
+      @media all and (min-width: 768px) and (max-width: 991px)
+        min-height: 135px!important
+    &.show-item-object
+      padding-top: 0
+      position: fixed
+      z-index: 1
+      width: 60%
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      margin-right: 0!important
+      .title
+        padding-right: 60%!important
+      .object-img
+        float: left
+        width: 40%
+      .description
+        display: block
+        float: left
+        width: 50%
+        position: absolute
+        left: 40%
+        top : 0
+        height: 100%
+        padding-top: 15px
+      .btn-details
+        background: url("../images/icon-close.png") no-repeat
+        height: 22px
+        width: 23px
+        right: 3%
+    @media all and (min-width: 768px)
+      &:not(:nth-child(3n+1))
+        margin-right: 2%
+    @media all and (max-width: 767px)
+      width: 100%
+.service-repair
+  .section-2
+    margin-top: 35px
+    @include flexbox()
+    @include justify-content(space-between)
+    @include flex-wrap(wrap)
+    padding-bottom: 15px
+    @media all and (max-width: 991px)
+      margin-top: 5px
+  .item-block
+    width: 30%
+    @media all and (max-width: 991px)
+      width: 100%
+      background: $roze
+      margin-top: 15px
+      padding: 30px
+      @media all and (max-width: 767px)
+        padding: 15px 0
+        background: none
+        margin-top: 0
+    .text-block
+      @media all and (max-width: 991px)
+        float: right
+        width: 70%
+      @media all and (max-width: 484px)
+        width: 60%
+      @media all and (max-width: 350px)
+        width: 58%
+    .img-block
+      @media all and (max-width: 991px)
+        float: left
+        height: 100%
+        margin-right: 30px
+      @media all and (max-width: 767px)
+        margin-right: 20px
+      img
+        @media all and (max-width: 767px)
+          max-height: 70px
+    .title
+      font: 600 16px open_sans
+      color: $black
+      text-align: left
+      text-transform: uppercase
+      margin: 35px 0 28px 0
+      @media all and (max-width: 991px)
+        margin-top: 0
+        margin-bottom: 18px
+    .description
+      font: 14px open_sans
+      color: $black
+      text-align: left
+      @media all and (max-width: 991px)
+        letter-spacing: -0.8px
+        line-height: 22px
+    .call-us
+      font: 20px open_sans
+      background: $orange
+      margin: 35px 0 0 0
+      padding: 16px 50px 16px 16px
+      @media all and (max-width: 991px)
+        display: none
+      &:after
+        right: 12px
+.garage-door-motors
+  .section-1
+    @media all and (max-width: 515px)
+      height: 600px
+    .text-right-section-1
+      &.right
+        @media all and (max-width: 515px)
+          top: 38%
+    .img-left-section-1
+      @media all and (max-width: 515px)
+        top: 38%
+.garage-door-motors
+  .objects-container
+    .item-object
+      .title
+        @media all and (max-width: 1111px)
+          min-height: 90px
+        @media all and (max-width: 991px)
+          min-height: 75px
+      .description
+        min-height: 190px
+        @media all and (max-width: 767px)
+          min-height: 158px
+.timber-doors
+  .objects-container
+    .item-object
+      .description
+        min-height: 200px
+        @media all and (max-width: 767px)
+          min-height: 158px
+.commercial-industrial-doors
+  .objects-container
+    .item-object
+      .description
+        min-height: 200px
+        @media all and (max-width: 767px)
+          min-height: 158px
+.contacts
+  display: none
+  background: $orange
+  @media all and (max-width: 991px)
+    display: block
+  .contacts-container
+    @include flexbox()
+    @include justify-content(space-between)
+    @include align-items(center)
+    .call-us
+      padding-right: 25px
+      margin: 20px -27px 20px 0
+      max-width: 110px
+      @media all and (max-width: 345px)
+        max-width: 85px
+        text-align: center
+    .to-top
+      display: inline
+      position: relative
+      padding-left: 45px
+      margin: 0
+      font: 14px open_sans
+      color: $white
+      cursor: pointer
+      @media all and (max-width: 767px)
+        position: absolute
+        right: 30px
+        bottom: 30px
+        color: $orange
+        z-index: 1
+      &:before
+        content: ''
+        position: absolute
+        background: url("../images/icon-pointer.png") no-repeat
+        @include transform(rotate(-90deg))
+        height: 31px
+        width: 18px
+        top: -6px
+        left: 0
+        @media all and (max-width: 767px)
+          background: url("../images/icon-pointer-orange.png") no-repeat
+          @include transform(rotate(0deg))
+          height: 18px
+          width: 31px
+          top: -30px
+          left: 70px
+    .phone-number
+      position: relative
+      margin: 0
+      padding-left: 42px
+      letter-spacing: -0.5px
+      &:before
+        content: ''
+        position: absolute
+        background: url("../images/icon-phone.png") no-repeat
+        @include background-size(cover)
+        height: 25px
+        width: 25px
+        top: 0
+        left: 0
+.footer
+  position: absolute
+  width: 100%
+  bottom: 0
+
+  .nav-bottom
+    padding: 10px 0 14px 0
+    background: $orange
+    @media all and (max-width: 991px)
+      background: $white
+    @media all and (max-width: 767px)
+      padding-bottom: 20px
+    .nav-content
+      list-style: none
+      padding: 0 0 0 193px
+      @include flexbox()
+      @include justify-content(space-between)
+      @include align-items(center)
+      @include flex-wrap(wrap)
+      text-transform: uppercase
+      min-height: 80px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        background: url("../images/logo-footer.png") no-repeat
+        height: 66px
+        width: 193px
+        left: 0
+        @media all and (max-width: 991px)
+          background: url("../images/logo.png") no-repeat
+          @include background-size(cover)
+        @media all and (max-width: 360px)
+          height: 50px
+          width: 150px
+      .menu-element
+        width: 25%
+        @media all and (max-width: 767px)
+          display: none
+        a
+          font: 300 10px open_sans
+          color: $white
+          max-width: 100px
+          display: block
+          text-align: center
+          margin: 0 auto
+          @media all and (max-width: 991px)
+            color: $orange
+            font-size: 11px
+

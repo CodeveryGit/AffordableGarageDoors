@@ -1,0 +1,1908 @@
+@import url(fonts.css);
+.text-title {
+  font: 600 20px open_sans;
+  color: #212121;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+  margin: 28px 0 22px 0; }
+
+.text {
+  font: 600 14px open_sans;
+  color: #212121;
+  text-align: left;
+  letter-spacing: -0.5px;
+  margin: 0 0 5px;
+  line-height: 21px; }
+
+.custom-container {
+  width: 76.5%;
+  margin: 0 auto; }
+  @media all and (max-width: 991px) {
+    .custom-container {
+      width: 74.5%; } }
+
+.phone-number {
+  color: #ffffff;
+  font: 600 21px open_sans;
+  margin: 87px 0 0 20px; }
+
+.call-us {
+  position: relative;
+  color: #ffffff;
+  font: 14px open_sans;
+  text-transform: uppercase;
+  margin: 25px;
+  padding-right: 35px; }
+  .call-us:after {
+    content: "";
+    position: absolute;
+    background: url("../images/icon-pointer.png") no-repeat;
+    height: 31px;
+    width: 18px;
+    top: 50%;
+    right: 0;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 130px; }
+  @media all and (max-width: 991px) {
+    body {
+      margin-bottom: 195px; } }
+  @media all and (max-width: 345px) {
+    body {
+      margin-bottom: 220px; } }
+
+.nav-top {
+  padding: 0 0 7px 0;
+  background: #4d5d65;
+  opacity: 0.9; }
+  @media all and (max-width: 767px) {
+    .nav-top {
+      opacity: 1;
+      padding-bottom: 30px;
+      background: none; } }
+@-webkit-keyframes hide_menu {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes hide_menu {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes hide_menu {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+@keyframes hide_menu {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+  .nav-top .mobile-menu {
+    margin-top: 26px;
+    height: 50px;
+    display: none;
+    position: relative; }
+    @media all and (max-width: 767px) {
+      .nav-top .mobile-menu {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    .nav-top .mobile-menu .title {
+      font: 500 20px open_sans;
+      color: #ffffff;
+      text-transform: uppercase;
+      display: none;
+      margin-left: 35px; }
+  .nav-top .menu-btn {
+    position: absolute;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    right: 13px;
+    top: 15px;
+    height: 20px; }
+    @media all and (max-width: 767px) {
+      .nav-top .menu-btn {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+  .nav-top .icon-bar {
+    height: 3px;
+    width: 24px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(238, 138, 21, 0.2);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(238, 138, 21, 0.2);
+    box-shadow: 0px 0px 1px 1px rgba(238, 138, 21, 0.2); }
+  .nav-top .nav-custom {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    @media all and (max-width: 991px) {
+      .nav-top .nav-custom {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    @media all and (max-width: 767px) {
+      .nav-top .nav-custom {
+        display: none;
+        background: #ee8815;
+        padding-bottom: 20px;
+        -webkit-animation: hide_menu 0.2s linear forwards;
+        -moz-animation: hide_menu 0.2s linear forwards;
+        -o-animation: hide_menu 0.2s linear forwards;
+        animation: hide_menu 0.2s linear forwards; } }
+    .nav-top .nav-custom .menu-element {
+      border-top: 7px solid transparent;
+      padding: 8px 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      @media all and (min-width: 992px) {
+        .nav-top .nav-custom .menu-element {
+          max-width: 155px; } }
+      @media all and (max-width: 991px) {
+        .nav-top .nav-custom .menu-element {
+          width: 20%;
+          -webkit-box-pack: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: flex-start;
+          -ms-flex-pack: flex-start;
+          justify-content: flex-start; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element {
+          width: 50%;
+          border: none;
+          padding: 17px 0 5px 35px; } }
+      @media all and (max-width: 991px) {
+        .nav-top .nav-custom .menu-element:nth-child(5) {
+          width: 44%; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element:nth-child(5) {
+          width: 50%;
+          -webkit-box-pack: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: flex-start;
+          -ms-flex-pack: flex-start;
+          justify-content: flex-start; }
+          .nav-top .nav-custom .menu-element:nth-child(5) a {
+            max-width: 160px;
+            text-align: left;
+            letter-spacing: -0.5px; } }
+      @media all and (max-width: 991px) and (min-width: 768px) {
+        .nav-top .nav-custom .menu-element:nth-child(6) {
+          width: 22%; } }
+      @media all and (max-width: 991px) {
+        .nav-top .nav-custom .menu-element:nth-child(5), .nav-top .nav-custom .menu-element:nth-child(6), .nav-top .nav-custom .menu-element:nth-child(7) {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding-top: 0; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element:nth-child(5), .nav-top .nav-custom .menu-element:nth-child(6), .nav-top .nav-custom .menu-element:nth-child(7) {
+          -webkit-box-pack: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: flex-start;
+          -ms-flex-pack: flex-start;
+          justify-content: flex-start;
+          padding: 17px 0 5px 35px; } }
+      @media all and (max-width: 991px) {
+        .nav-top .nav-custom .menu-element:nth-child(7) {
+          padding-left: 18px; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element:nth-child(7) {
+          padding: 12px 0 5px 35px;
+          width: 100%; } }
+      .nav-top .nav-custom .menu-element a {
+        font: 300 10px open_sans;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 7px 25px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .nav-top .nav-custom .menu-element a:hover, .nav-top .nav-custom .menu-element a:focus {
+          background: none; }
+        @media all and (max-width: 991px) {
+          .nav-top .nav-custom .menu-element a {
+            padding: 7px 0;
+            font-size: 13px; } }
+        @media all and (max-width: 767px) {
+          .nav-top .nav-custom .menu-element a {
+            font-size: 15px;
+            font-weight: 400;
+            display: block; } }
+      @media all and (min-width: 992px) {
+        .nav-top .nav-custom .menu-element.active {
+          border-top: 7px solid #ee8815; } }
+      @media all and (max-width: 991px) {
+        .nav-top .nav-custom .menu-element.active a {
+          border: 2px solid #ee8815;
+          padding: 5px 25px; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element.active a {
+          padding: 0;
+          height: 25px; } }
+      @media all and (max-width: 767px) {
+        .nav-top .nav-custom .menu-element.active a span {
+          border-bottom: solid 1px #ffffff; } }
+@-webkit-keyframes open {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes open {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes open {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@keyframes open {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+  .nav-top.open .nav-custom {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav-top.open .mobile-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #d17315; }
+    .nav-top.open .mobile-menu .title {
+      display: block; }
+  .nav-top.open .nav-custom {
+    -webkit-animation: open 0.2s linear forwards;
+    -moz-animation: open 0.2s linear forwards;
+    -o-animation: open 0.2s linear forwards;
+    animation: open 0.2s linear forwards; }
+
+.section-1 {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  background: url("../images/background-section-1.png") 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media all and (max-width: 767px) {
+    .section-1 {
+      height: 460px; } }
+  .section-1 .img-left-section-1 {
+    position: absolute;
+    background: #ee8815;
+    height: 59%;
+    width: 20px;
+    top: 50%;
+    left: 99px;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3); }
+    @media all and (max-width: 991px) {
+      .section-1 .img-left-section-1 {
+        top: 56.3%;
+        left: 36px; } }
+    @media all and (max-width: 767px) {
+      .section-1 .img-left-section-1 {
+        left: 0;
+        width: 10px;
+        top: 39%;
+        height: 66%; } }
+    .section-1 .img-left-section-1:before {
+      content: "";
+      position: absolute;
+      background: url("../images/img-left-section-1.png") 50% no-repeat;
+      position: absolute;
+      top: 50%;
+      left: -99px;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 128%;
+      width: 100px;
+      -webkit-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3); }
+      @media all and (max-width: 991px) {
+        .section-1 .img-left-section-1:before {
+          width: 36px;
+          left: -36px; } }
+      @media all and (max-width: 767px) {
+        .section-1 .img-left-section-1:before {
+          width: 0;
+          left: 0; } }
+  .section-1 .text-right-section-1 {
+    position: absolute;
+    background: #ee8815;
+    height: 59%;
+    width: 180px;
+    top: 50%;
+    right: 99px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    z-index: 1; }
+    .section-1 .text-right-section-1:before {
+      content: "";
+      position: absolute;
+      background: url("../images/icon-phone.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 37px;
+      width: 37px;
+      top: 25px;
+      left: 20px; }
+    @media all and (max-width: 991px) {
+      .section-1 .text-right-section-1 {
+        top: 56.5%;
+        right: 50px; } }
+    @media all and (max-width: 767px) {
+      .section-1 .text-right-section-1 {
+        width: 50px;
+        right: 0;
+        top: 39%;
+        height: 66%; } }
+    @media all and (max-width: 767px) {
+      .section-1 .text-right-section-1.right .phone-number {
+        display: none; } }
+    @media all and (max-width: 767px) {
+      .section-1 .text-right-section-1.right .call-us {
+        display: none; } }
+    @media all and (max-width: 767px) {
+      .section-1 .text-right-section-1.right:before {
+        display: none; } }
+    .section-1 .text-right-section-1.bottom {
+      display: none; }
+      @media all and (max-width: 767px) {
+        .section-1 .text-right-section-1.bottom {
+          position: inherit;
+          background: none;
+          display: block;
+          height: auto;
+          width: 100%;
+          padding-left: 42px;
+          margin-top: 33px;
+          box-shadow: none; }
+          .section-1 .text-right-section-1.bottom:before {
+            top: 5px;
+            left: 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 25px;
+            width: 25px; }
+          .section-1 .text-right-section-1.bottom .phone-number {
+            display: inline-block;
+            margin: 0;
+            line-height: 35px;
+            letter-spacing: -0.5px; }
+          .section-1 .text-right-section-1.bottom .call-us {
+            margin: 0;
+            display: inline-block;
+            float: right;
+            max-width: 107px;
+            line-height: 17px;
+            padding-right: 25px; }
+            .section-1 .text-right-section-1.bottom .call-us:after {
+              top: 17px; } }
+  .section-1 .img-right-section-1 {
+    position: absolute;
+    background: url("../images/img-right-section-1.png") 50% no-repeat;
+    top: 50%;
+    right: 0;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 76%;
+    width: 190px;
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3);
+    z-index: 0; }
+    @media all and (max-width: 991px) {
+      .section-1 .img-right-section-1 {
+        top: 56.5%;
+        width: 135px; } }
+    @media all and (max-width: 767px) {
+      .section-1 .img-right-section-1 {
+        display: none; } }
+  .section-1 .main-text-content {
+    padding: 110px 359px 1% 200px;
+    height: 100%; }
+    @media all and (max-width: 991px) {
+      .section-1 .main-text-content {
+        padding: 140px 250px 1% 90px; } }
+    @media all and (max-width: 767px) {
+      .section-1 .main-text-content {
+        padding: 26px 15px 1% 35px; } }
+    @media all and (max-width: 330px) {
+      .section-1 .main-text-content {
+        padding: 26px 5px 1% 35px; } }
+    .section-1 .main-text-content .header-text {
+      font: 700 italic 28px open_sans;
+      color: #ffffff;
+      text-align: left;
+      text-transform: uppercase; }
+      @media all and (max-width: 767px) {
+        .section-1 .main-text-content .header-text {
+          font-size: 21px; } }
+    .section-1 .main-text-content .logo {
+      height: 100px;
+      width: 300px;
+      margin-top: 30px; }
+      @media all and (max-width: 767px) {
+        .section-1 .main-text-content .logo {
+          height: 80px;
+          width: 230px;
+          margin-top: 20px; } }
+  .section-1 .who-are-we {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 70px; }
+    @media all and (max-width: 991px) {
+      .section-1 .who-are-we {
+        margin-top: 40px; } }
+    @media all and (max-width: 767px) {
+      .section-1 .who-are-we {
+        padding-left: 0;
+        margin-top: 30px; } }
+    .section-1 .who-are-we:before {
+      content: "";
+      position: absolute;
+      background: url("../images/icon-pointer.png") no-repeat;
+      height: 31px;
+      width: 18px;
+      left: 0;
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+      @media all and (max-width: 767px) {
+        .section-1 .who-are-we:before {
+          display: none; } }
+    .section-1 .who-are-we .title {
+      font: 500 20px open_sans;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+      @media all and (max-width: 767px) {
+        .section-1 .who-are-we .title {
+          margin-bottom: 10px; } }
+    .section-1 .who-are-we .description {
+      font: 14px open_sans;
+      color: #ffffff;
+      line-height: 22px;
+      margin-top: 30px;
+      letter-spacing: -0.3px;
+      max-width: 495px; }
+      @media all and (max-width: 991px) {
+        .section-1 .who-are-we .description {
+          font-size: 15px; } }
+      @media all and (max-width: 767px) {
+        .section-1 .who-are-we .description {
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 23px;
+          max-width: 85%; } }
+
+.home-page .section-2 {
+  background: #ee8815; }
+  @media all and (max-width: 767px) {
+    .home-page .section-2 {
+      background: #ffffff; } }
+  @media all and (max-width: 767px) {
+    .home-page .section-2 .custom-container {
+      width: 100%; } }
+  .home-page .section-2 .benefits {
+    background: #ee8815;
+    list-style: none;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100px;
+    padding: 0; }
+    @media all and (max-width: 767px) {
+      .home-page .section-2 .benefits {
+        background: #ffffff;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    .home-page .section-2 .benefits li {
+      background: #ee8815; }
+      @media all and (max-width: 767px) {
+        .home-page .section-2 .benefits li {
+          min-height: 78px;
+          margin-top: 8px;
+          width: 100%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; } }
+      .home-page .section-2 .benefits li .benefits-container {
+        position: relative;
+        font: 11px open_sans;
+        color: #ffffff;
+        padding-left: 85px;
+        text-align: left; }
+        @media all and (max-width: 767px) {
+          .home-page .section-2 .benefits li .benefits-container {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 110px; } }
+        .home-page .section-2 .benefits li .benefits-container:before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+      .home-page .section-2 .benefits li:nth-child(1) .benefits-container:before {
+        content: "";
+        background: url("../images/Free%20Measure.png") no-repeat;
+        height: 46px;
+        width: 66px; }
+      @media all and (max-width: 767px) {
+        .home-page .section-2 .benefits li:nth-child(2) .benefits-container {
+          margin-left: -30px; } }
+      .home-page .section-2 .benefits li:nth-child(2) .benefits-container:before {
+        content: "";
+        background: url("../images/48Hour.png") no-repeat;
+        height: 56px;
+        width: 61px; }
+      @media all and (max-width: 767px) {
+        .home-page .section-2 .benefits li:nth-child(3) .benefits-container {
+          margin-left: 4px; } }
+      .home-page .section-2 .benefits li:nth-child(3) .benefits-container:before {
+        content: "";
+        background: url("../images/We_also_service_garage_doors.png") no-repeat;
+        height: 57px;
+        width: 60px; }
+.home-page .section-3 {
+  padding-bottom: 28px; }
+  @media all and (max-width: 991px) {
+    .home-page .section-3 .top-indent {
+      margin-top: 30px; } }
+  .home-page .section-3 .read-more-container .read-more {
+    color: #ee8815;
+    font: 14px open_sans;
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: none; }
+    @media all and (max-width: 767px) {
+      .home-page .section-3 .read-more-container .read-more {
+        display: block; } }
+  @media all and (max-width: 767px) {
+    .home-page .section-3 .read-more-container .text {
+      display: none; } }
+  @media all and (max-width: 767px) {
+    .home-page .section-3 .read-more-container.open .text {
+      display: block; } }
+.home-page .section-4 {
+  background: #ee8815;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  max-height: 270px; }
+  @media all and (max-width: 767px) {
+    .home-page .section-4 {
+      max-height: 540px;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; } }
+  .home-page .section-4 .video-image {
+    width: 38.5%;
+    height: 270px;
+    margin-right: -3px;
+    position: relative;
+    display: block; }
+    @media all and (max-width: 991px) {
+      .home-page .section-4 .video-image {
+        width: 50%;
+        margin-right: 0; } }
+    @media all and (max-width: 767px) {
+      .home-page .section-4 .video-image {
+        width: 100%; } }
+    .home-page .section-4 .video-image img {
+      width: 100%;
+      height: 100%; }
+  .home-page .section-4 .video-container {
+    position: absolute;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer; }
+    .home-page .section-4 .video-container .video-btn {
+      background: url("../images/video-play.png") no-repeat;
+      height: 61px;
+      width: 60px; }
+    .home-page .section-4 .video-container .video-title {
+      text-transform: uppercase;
+      color: #ffffff;
+      font: 500 15px open_sans;
+      margin-top: 10px; }
+  .home-page .section-4 .section-video {
+    width: 38.5%;
+    margin-right: -3px;
+    display: none;
+    height: 270px; }
+    @media all and (max-width: 991px) {
+      .home-page .section-4 .section-video {
+        width: 50%;
+        margin-right: 0; } }
+    @media all and (max-width: 767px) {
+      .home-page .section-4 .section-video {
+        width: 100%; } }
+  .home-page .section-4 .section-5 {
+    position: relative;
+    width: 50%;
+    height: 270px; }
+    @media all and (max-width: 767px) {
+      .home-page .section-4 .section-5 {
+        width: 100%; } }
+    .home-page .section-4 .section-5 .section-img {
+      width: 100%;
+      height: 100%; }
+  .home-page .section-4 .video-description {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .home-page .section-4 .text-title {
+    padding-left: 40px;
+    margin: 23px 0 18px 0; }
+    @media all and (max-width: 767px) {
+      .home-page .section-4 .text-title {
+        width: 82%;
+        margin: 23px auto 18px auto;
+        padding-left: 23px; } }
+  .home-page .section-4 .list-description {
+    list-style: none;
+    padding-left: 20px;
+    max-width: 300px; }
+    @media all and (max-width: 767px) {
+      .home-page .section-4 .list-description {
+        max-width: 74.5%;
+        margin: 0 auto;
+        padding-left: 0; } }
+    .home-page .section-4 .list-description .text {
+      margin-bottom: 25px; }
+      @media all and (max-width: 380px) {
+        .home-page .section-4 .list-description .text {
+          margin-bottom: 5px; } }
+    .home-page .section-4 .list-description li {
+      position: relative;
+      padding-left: 20px; }
+      .home-page .section-4 .list-description li:before {
+        content: "";
+        position: absolute;
+        background: #ee8815;
+        border-radius: 50%;
+        top: 30%;
+        left: 0;
+        height: 8px;
+        width: 8px; }
+.home-page .section-6 {
+  min-height: 170px;
+  padding-top: 28px; }
+  .home-page .section-6 .text-title {
+    margin-top: 0; }
+  .home-page .section-6 .suppliers-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @media all and (max-width: 767px) {
+      .home-page .section-6 .suppliers-container {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+  @media all and (max-width: 767px) {
+    .home-page .section-6 .suppliers-item {
+      width: 50%;
+      margin-bottom: 35px; }
+      .home-page .section-6 .suppliers-item:nth-child(1) {
+        -webkit-order: 0;
+        -ms-order: 0;
+        order: 0; }
+      .home-page .section-6 .suppliers-item:nth-child(2) {
+        -webkit-order: 1;
+        -ms-order: 1;
+        order: 1; }
+      .home-page .section-6 .suppliers-item:nth-child(3) {
+        -webkit-order: 2;
+        -ms-order: 2;
+        order: 2; }
+      .home-page .section-6 .suppliers-item:nth-child(4) {
+        -webkit-order: 4;
+        -ms-order: 4;
+        order: 4; }
+      .home-page .section-6 .suppliers-item:nth-child(5) {
+        -webkit-order: 3;
+        -ms-order: 3;
+        order: 3; } }
+  .home-page .section-6 .suppliers-item img {
+    margin: 0 auto; }
+.home-page .section-7 {
+  background: url("../images/SelectionGuide-bg.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 435px; }
+  @media all and (max-width: 1015px) {
+    .home-page .section-7 {
+      padding-bottom: 6px;
+      min-height: 455px; } }
+  .home-page .section-7 .selection-guid-description {
+    font: 14px open_sans;
+    color: #ffffff;
+    padding-top: 23px; }
+    @media all and (max-width: 991px) {
+      .home-page .section-7 .selection-guid-description {
+        font-size: 15px; } }
+  .home-page .section-7 .rotate-vertical {
+    float: right;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top; }
+  .home-page .section-7 .vertical-body-horizontal {
+    -webkit-transform: translateX(0%) rotate(-90deg);
+    -moz-transform: translateX(0%) rotate(-90deg);
+    -o-transform: translateX(0%) rotate(-90deg);
+    transform: translateX(0%) rotate(-90deg); }
+  .home-page .section-7 .custom-container-accordion {
+    width: 76.5%;
+    margin: 25px auto 0 auto;
+    position: relative; }
+    @media all and (max-width: 991px) {
+      .home-page .section-7 .custom-container-accordion {
+        width: 74.5%; } }
+    @media all and (max-width: 767px) {
+      .home-page .section-7 .custom-container-accordion {
+        width: 100%; } }
+  .home-page .section-7 .panel-group {
+    margin: 0 auto; }
+    @media all and (min-width: 992px) {
+      .home-page .section-7 .panel-group {
+        position: absolute;
+        top: 0;
+        right: 12px; } }
+    @media all and (min-width: 1468px) {
+      .home-page .section-7 .panel-group {
+        top: 18px;
+        right: 0; } }
+    @media all and (max-width: 1015px) {
+      .home-page .section-7 .panel-group {
+        top: 18px; } }
+    @media all and (max-width: 998px) {
+      .home-page .section-7 .panel-group {
+        top: 0; } }
+    @media all and (max-width: 991px) {
+      .home-page .section-7 .panel-group {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+    .home-page .section-7 .panel-group .panel {
+      margin-top: 10px;
+      margin-bottom: -5px; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-group .panel {
+          margin-top: 6px; } }
+  .home-page .section-7 .collapsing {
+    -webkit-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8);
+    -moz-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8);
+    -o-transition: height 4s cubic-bezier(0, 1.8, 1, 1.8);
+    transition: height 4s cubic-bezier(0, 1.8, 1, 1.8); }
+  .home-page .section-7 .panel-collapse {
+    background: rgba(53, 69, 77, 0.7);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden; }
+  .home-page .section-7 .panel-default {
+    background: none;
+    border: none;
+    position: relative;
+    filter: contrast(80%); }
+    .home-page .section-7 .panel-default:nth-child(1) {
+      background: url("../images/accordion-bg4.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 50% 60%; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-default:nth-child(1) {
+          background: url("../images/accordion-bg4-horizontal.png") no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: 50% 60%; } }
+    .home-page .section-7 .panel-default:nth-child(2) {
+      background: url("../images/accordion-bg3.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 50% 28%; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-default:nth-child(2) {
+          background: url("../images/accordion-bg3-horizontal.png") no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: 50% 45%; } }
+    .home-page .section-7 .panel-default:nth-child(3) {
+      background: url("../images/accordion-bg2.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 50% 76%; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-default:nth-child(3) {
+          background: url("../images/accordion-bg2-horizontal.png") no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: 50% 45%; } }
+    .home-page .section-7 .panel-default:nth-child(4) {
+      background: url("../images/accordion-bg1.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 50% 76%; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-default:nth-child(4) {
+          background: url("../images/accordion-bg1-horizontal.png") no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: 50% 60%;
+          margin-top: 0; } }
+    @media all and (max-width: 991px) {
+      .home-page .section-7 .panel-default {
+        position: relative;
+        padding-top: 76px; } }
+    .home-page .section-7 .panel-default .panel-heading {
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-bottom: 6px solid #ee8815;
+      background: rgba(53, 69, 77, 0.7);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      border-radius: 0;
+      margin-bottom: -9px; }
+      @media all and (max-width: 991px) {
+        .home-page .section-7 .panel-default .panel-heading {
+          border-bottom: 0;
+          border-top: 6px solid #ee8815;
+          position: absolute;
+          top: 0;
+          width: 100%; } }
+      @media all and (max-width: 767px) {
+        .home-page .section-7 .panel-default .panel-heading {
+          padding: 10px 0; } }
+  .home-page .section-7 .panel-title {
+    position: relative;
+    height: 50px; }
+    @media all and (max-width: 767px) {
+      .home-page .section-7 .panel-title {
+        width: 80%;
+        margin: 0 auto 0 12.75%; } }
+    .home-page .section-7 .panel-title a {
+      position: absolute;
+      text-align: left;
+      font: 400 29px open_sans;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: -0.7px;
+      height: 100%;
+      width: 100%;
+      line-height: 1.8; }
+      @media all and (min-width: 992px) {
+        .home-page .section-7 .panel-title a {
+          -moz-transform: translateX(0%) rotate(-180deg);
+          -o-transform: translateX(0%) rotate(-180deg);
+          -ms-transform: translateX(0%) rotate(-180deg);
+          -webkit-transform: translateX(0%) rotate(-180deg);
+          transform: translateX(0%) rotate(-180deg);
+          text-align: right; } }
+      @media all and (max-width: 767px) {
+        .home-page .section-7 .panel-title a {
+          font-size: 25px; } }
+  .home-page .section-7 .panel-body {
+    font: 14px open_sans;
+    color: #ffffff;
+    padding: 15px 15px 15px 0;
+    float: left; }
+    @media all and (max-width: 991px) {
+      .home-page .section-7 .panel-body {
+        padding-left: 15px;
+        font-size: 15px; } }
+    @media all and (max-width: 767px) {
+      .home-page .section-7 .panel-body {
+        margin: 0 auto;
+        padding: 15px 12.75%;
+        font-size: 14px; } }
+    .home-page .section-7 .panel-body .text-block {
+      margin-bottom: 30px; }
+      @media all and (max-width: 767px) {
+        .home-page .section-7 .panel-body .text-block:last-of-type {
+          margin-bottom: 0; } }
+.home-page .section-8 .text {
+  font-weight: 400;
+  margin-bottom: 30px; }
+.home-page .section-8 .list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 30px; }
+  .home-page .section-8 .list .list-item {
+    font: 600 14px open_sans;
+    color: #212121;
+    width: 50%;
+    position: relative;
+    padding-left: 15px; }
+    @media all and (max-width: 767px) {
+      .home-page .section-8 .list .list-item {
+        width: 100%; } }
+    .home-page .section-8 .list .list-item:before {
+      content: "";
+      position: absolute;
+      height: 7px;
+      width: 7px;
+      background: #ee8815;
+      border-radius: 50%;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 50%;
+      left: 0; }
+
+.contact-us .section-1 {
+  position: relative;
+  height: 570px; }
+  @media all and (min-width: 768px) {
+    .contact-us .section-1 {
+      border-bottom: 10px solid #ee8815;
+      background: none;
+      margin-top: 10px; } }
+  @media all and (max-width: 767px) {
+    .contact-us .section-1 {
+      margin-bottom: 110px; } }
+  .contact-us .section-1 #google-map-1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    @media all and (max-width: 767px) {
+      .contact-us .section-1 #google-map-1 {
+        position: absolute;
+        height: 200px;
+        margin-top: 460px;
+        top: 0; } }
+  .contact-us .section-1 .img-left-section-1 {
+    width: 120px;
+    left: 0; }
+    @media all and (max-width: 767px) {
+      .contact-us .section-1 .img-left-section-1 {
+        width: 10px; } }
+    .contact-us .section-1 .img-left-section-1:before {
+      display: none; }
+  .contact-us .section-1 a[href^="https://maps.google.com/maps"] {
+    display: none !important; }
+  .contact-us .section-1 .gm-style-cc {
+    display: none; }
+  @media all and (max-width: 767px) {
+    .contact-us .section-1 .text-right-section-1 {
+      width: 180px;
+      right: inherit;
+      left: 30px; } }
+  .contact-us .section-1 .text-right-section-1:before {
+    top: 135px;
+    height: 25px;
+    width: 25px; }
+    @media all and (max-width: 767px) {
+      .contact-us .section-1 .text-right-section-1:before {
+        top: 130px; } }
+  .contact-us .section-1 .text-right-section-1 .address {
+    position: relative;
+    font: 15px open_sans;
+    color: #ffffff;
+    margin: 65px 0 0 20px;
+    text-transform: uppercase; }
+    .contact-us .section-1 .text-right-section-1 .address:before {
+      content: "";
+      background: url("../images/icon-home.png") no-repeat;
+      height: 19px;
+      width: 21px;
+      position: absolute;
+      top: -40px;
+      left: 0; }
+  .contact-us .section-1 .text-right-section-1 .phone-number {
+    margin-top: 15px;
+    margin-top: 40px; }
+  .contact-us .section-1 .block-right-section-1 {
+    display: none;
+    position: absolute;
+    width: 50px;
+    background: #ee8815;
+    right: 0;
+    top: 39%;
+    height: 66%;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.3); }
+    @media all and (max-width: 767px) {
+      .contact-us .section-1 .block-right-section-1 {
+        display: block; } }
+.contact-us .section-2 .text {
+  margin-bottom: 27px; }
+
+@media all and (min-width: 768px) {
+  .timber-doors .section-1,
+  .commercial-industrial-doors .section-1,
+  .roller-door .section-1,
+  .garage-door-motors .section-1,
+  .service-repair .section-1,
+  .sectional-doors .section-1 {
+    border-bottom: 10px solid #ee8815; } }
+@media all and (max-width: 992px) {
+  .timber-doors .section-1 .img-right-section-1,
+  .commercial-industrial-doors .section-1 .img-right-section-1,
+  .roller-door .section-1 .img-right-section-1,
+  .garage-door-motors .section-1 .img-right-section-1,
+  .service-repair .section-1 .img-right-section-1,
+  .sectional-doors .section-1 .img-right-section-1 {
+    top: 57.5%; } }
+@media all and (max-width: 991px) {
+  .timber-doors .section-1 .img-left-section-1,
+  .commercial-industrial-doors .section-1 .img-left-section-1,
+  .roller-door .section-1 .img-left-section-1,
+  .garage-door-motors .section-1 .img-left-section-1,
+  .service-repair .section-1 .img-left-section-1,
+  .sectional-doors .section-1 .img-left-section-1 {
+    top: 57.5%; } }
+@media all and (max-width: 767px) {
+  .timber-doors .section-1 .img-left-section-1,
+  .commercial-industrial-doors .section-1 .img-left-section-1,
+  .roller-door .section-1 .img-left-section-1,
+  .garage-door-motors .section-1 .img-left-section-1,
+  .service-repair .section-1 .img-left-section-1,
+  .sectional-doors .section-1 .img-left-section-1 {
+    top: 39%; } }
+@media all and (max-width: 767px) {
+  .timber-doors .section-1 .main-text-content,
+  .commercial-industrial-doors .section-1 .main-text-content,
+  .roller-door .section-1 .main-text-content,
+  .garage-door-motors .section-1 .main-text-content,
+  .service-repair .section-1 .main-text-content,
+  .sectional-doors .section-1 .main-text-content {
+    padding-right: 70px; } }
+.timber-doors .section-1 .main-text-content .description,
+.commercial-industrial-doors .section-1 .main-text-content .description,
+.roller-door .section-1 .main-text-content .description,
+.garage-door-motors .section-1 .main-text-content .description,
+.service-repair .section-1 .main-text-content .description,
+.sectional-doors .section-1 .main-text-content .description {
+  font: 14px open_sans;
+  color: #ffffff;
+  margin-top: 35px;
+  max-width: 495px; }
+  @media all and (max-width: 400px) {
+    .timber-doors .section-1 .main-text-content .description,
+    .commercial-industrial-doors .section-1 .main-text-content .description,
+    .roller-door .section-1 .main-text-content .description,
+    .garage-door-motors .section-1 .main-text-content .description,
+    .service-repair .section-1 .main-text-content .description,
+    .sectional-doors .section-1 .main-text-content .description {
+      font-size: 12px; } }
+.timber-doors .contacts,
+.commercial-industrial-doors .contacts,
+.roller-door .contacts,
+.garage-door-motors .contacts,
+.service-repair .contacts,
+.sectional-doors .contacts {
+  display: none; }
+  .timber-doors .contacts .call-us:after,
+  .commercial-industrial-doors .contacts .call-us:after,
+  .roller-door .contacts .call-us:after,
+  .garage-door-motors .contacts .call-us:after,
+  .service-repair .contacts .call-us:after,
+  .sectional-doors .contacts .call-us:after {
+    background: none; }
+  @media all and (max-width: 767px) {
+    .timber-doors .contacts,
+    .commercial-industrial-doors .contacts,
+    .roller-door .contacts,
+    .garage-door-motors .contacts,
+    .service-repair .contacts,
+    .sectional-doors .contacts {
+      display: block; } }
+.timber-doors .objects-container,
+.commercial-industrial-doors .objects-container,
+.roller-door .objects-container,
+.garage-door-motors .objects-container,
+.service-repair .objects-container,
+.sectional-doors .objects-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+  @media all and (max-width: 767px) {
+    .timber-doors .objects-container,
+    .commercial-industrial-doors .objects-container,
+    .roller-door .objects-container,
+    .garage-door-motors .objects-container,
+    .service-repair .objects-container,
+    .sectional-doors .objects-container {
+      padding-top: 15px; } }
+  @media all and (max-width: 767px) {
+    .timber-doors .objects-container.custom-container,
+    .commercial-industrial-doors .objects-container.custom-container,
+    .roller-door .objects-container.custom-container,
+    .garage-door-motors .objects-container.custom-container,
+    .service-repair .objects-container.custom-container,
+    .sectional-doors .objects-container.custom-container {
+      width: 89%; } }
+  .timber-doors .objects-container .clyde-num,
+  .commercial-industrial-doors .objects-container .clyde-num,
+  .roller-door .objects-container .clyde-num,
+  .garage-door-motors .objects-container .clyde-num,
+  .service-repair .objects-container .clyde-num,
+  .sectional-doors .objects-container .clyde-num {
+    font: 500 21px open_sans;
+    color: #ee8815;
+    margin: 0 auto;
+    display: none; }
+    @media all and (max-width: 767px) {
+      .timber-doors .objects-container .clyde-num,
+      .commercial-industrial-doors .objects-container .clyde-num,
+      .roller-door .objects-container .clyde-num,
+      .garage-door-motors .objects-container .clyde-num,
+      .service-repair .objects-container .clyde-num,
+      .sectional-doors .objects-container .clyde-num {
+        display: block; } }
+  .timber-doors .objects-container .owl-nav .owl-prev,
+  .timber-doors .objects-container .owl-nav .owl-next,
+  .commercial-industrial-doors .objects-container .owl-nav .owl-prev,
+  .commercial-industrial-doors .objects-container .owl-nav .owl-next,
+  .roller-door .objects-container .owl-nav .owl-prev,
+  .roller-door .objects-container .owl-nav .owl-next,
+  .garage-door-motors .objects-container .owl-nav .owl-prev,
+  .garage-door-motors .objects-container .owl-nav .owl-next,
+  .service-repair .objects-container .owl-nav .owl-prev,
+  .service-repair .objects-container .owl-nav .owl-next,
+  .sectional-doors .objects-container .owl-nav .owl-prev,
+  .sectional-doors .objects-container .owl-nav .owl-next {
+    position: absolute;
+    background: url("../images/arrow.png") no-repeat;
+    height: 18px;
+    width: 11px;
+    margin-top: 5px; }
+  .timber-doors .objects-container .owl-nav .owl-prev,
+  .commercial-industrial-doors .objects-container .owl-nav .owl-prev,
+  .roller-door .objects-container .owl-nav .owl-prev,
+  .garage-door-motors .objects-container .owl-nav .owl-prev,
+  .service-repair .objects-container .owl-nav .owl-prev,
+  .sectional-doors .objects-container .owl-nav .owl-prev {
+    left: 0; }
+  .timber-doors .objects-container .owl-nav .owl-next,
+  .commercial-industrial-doors .objects-container .owl-nav .owl-next,
+  .roller-door .objects-container .owl-nav .owl-next,
+  .garage-door-motors .objects-container .owl-nav .owl-next,
+  .service-repair .objects-container .owl-nav .owl-next,
+  .sectional-doors .objects-container .owl-nav .owl-next {
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    right: 0; }
+  .timber-doors .objects-container .item-object,
+  .commercial-industrial-doors .objects-container .item-object,
+  .roller-door .objects-container .item-object,
+  .garage-door-motors .objects-container .item-object,
+  .service-repair .objects-container .item-object,
+  .sectional-doors .objects-container .item-object {
+    padding-top: 15px; }
+    @media all and (max-width: 767px) {
+      .timber-doors .objects-container .item-object,
+      .commercial-industrial-doors .objects-container .item-object,
+      .roller-door .objects-container .item-object,
+      .garage-door-motors .objects-container .item-object,
+      .service-repair .objects-container .item-object,
+      .sectional-doors .objects-container .item-object {
+        padding-bottom: 5px; } }
+    .timber-doors .objects-container .item-object .title,
+    .commercial-industrial-doors .objects-container .item-object .title,
+    .roller-door .objects-container .item-object .title,
+    .garage-door-motors .objects-container .item-object .title,
+    .service-repair .objects-container .item-object .title,
+    .sectional-doors .objects-container .item-object .title {
+      min-height: 68px;
+      background: #ee8815;
+      color: #ffffff;
+      text-transform: uppercase;
+      font: 600 16px open_sans;
+      padding: 12px; }
+      @media all and (max-width: 991px) and (min-width: 940px) {
+        .timber-doors .objects-container .item-object .title,
+        .commercial-industrial-doors .objects-container .item-object .title,
+        .roller-door .objects-container .item-object .title,
+        .garage-door-motors .objects-container .item-object .title,
+        .service-repair .objects-container .item-object .title,
+        .sectional-doors .objects-container .item-object .title {
+          font-size: 14px; } }
+      @media all and (max-width: 940px) and (min-width: 768px) {
+        .timber-doors .objects-container .item-object .title,
+        .commercial-industrial-doors .objects-container .item-object .title,
+        .roller-door .objects-container .item-object .title,
+        .garage-door-motors .objects-container .item-object .title,
+        .service-repair .objects-container .item-object .title,
+        .sectional-doors .objects-container .item-object .title {
+          font-size: 12px;
+          min-height: 80px; } }
+      @media all and (max-width: 991px) {
+        .timber-doors .objects-container .item-object .title br,
+        .commercial-industrial-doors .objects-container .item-object .title br,
+        .roller-door .objects-container .item-object .title br,
+        .garage-door-motors .objects-container .item-object .title br,
+        .service-repair .objects-container .item-object .title br,
+        .sectional-doors .objects-container .item-object .title br {
+          display: none; } }
+    .timber-doors .objects-container .item-object .object-img,
+    .commercial-industrial-doors .objects-container .item-object .object-img,
+    .roller-door .objects-container .item-object .object-img,
+    .garage-door-motors .objects-container .item-object .object-img,
+    .service-repair .objects-container .item-object .object-img,
+    .sectional-doors .objects-container .item-object .object-img {
+      width: 100%;
+      min-height: 155px; }
+    .timber-doors .objects-container .item-object .description,
+    .commercial-industrial-doors .objects-container .item-object .description,
+    .roller-door .objects-container .item-object .description,
+    .garage-door-motors .objects-container .item-object .description,
+    .service-repair .objects-container .item-object .description,
+    .sectional-doors .objects-container .item-object .description {
+      background: #f9f5f4;
+      font: 13px open_sans;
+      color: #212121;
+      padding: 25px 12px 45px 12px;
+      min-height: 270px;
+      letter-spacing: -0.9px; }
+      @media all and (max-width: 767px) {
+        .timber-doors .objects-container .item-object .description,
+        .commercial-industrial-doors .objects-container .item-object .description,
+        .roller-door .objects-container .item-object .description,
+        .garage-door-motors .objects-container .item-object .description,
+        .service-repair .objects-container .item-object .description,
+        .sectional-doors .objects-container .item-object .description {
+          min-height: 160px;
+          padding-bottom: 25px; } }
+
+.roller-door .item-object,
+.timber-doors .item-object {
+  margin: 0;
+  width: 32%; }
+  @media all and (min-width: 992px) {
+    .roller-door .item-object:not(:nth-child(3n+3)),
+    .timber-doors .item-object:not(:nth-child(3n+3)) {
+      margin-right: 2%; } }
+  @media all and (max-width: 991px) and (min-width: 768px) {
+    .roller-door .item-object,
+    .timber-doors .item-object {
+      width: 49%; }
+      .roller-door .item-object:not(:nth-child(2n+2)),
+      .timber-doors .item-object:not(:nth-child(2n+2)) {
+        margin-right: 2%; } }
+  @media all and (max-width: 767px) {
+    .roller-door .item-object,
+    .timber-doors .item-object {
+      width: 100%; } }
+
+.commercial-industrial-doors .objects-container.show-item-object:before,
+.garage-door-motors .objects-container.show-item-object:before,
+.sectional-doors .objects-container.show-item-object:before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+.commercial-industrial-doors .title,
+.garage-door-motors .title,
+.sectional-doors .title {
+  position: relative; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .commercial-industrial-doors .title,
+    .garage-door-motors .title,
+    .sectional-doors .title {
+      padding-right: 40px !important; } }
+.commercial-industrial-doors .btn-details,
+.garage-door-motors .btn-details,
+.sectional-doors .btn-details {
+  background: url("../images/icon-pointer.png") no-repeat;
+  height: 31px;
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  display: none;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  @media all and (max-width: 991px) and (min-width: 768px) {
+    .commercial-industrial-doors .btn-details,
+    .garage-door-motors .btn-details,
+    .sectional-doors .btn-details {
+      display: block; } }
+.commercial-industrial-doors .item-object,
+.garage-door-motors .item-object,
+.sectional-doors .item-object {
+  margin: 0;
+  width: 32%; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .commercial-industrial-doors .item-object .description,
+    .garage-door-motors .item-object .description,
+    .sectional-doors .item-object .description {
+      display: none; } }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .commercial-industrial-doors .item-object .object-img,
+    .garage-door-motors .item-object .object-img,
+    .sectional-doors .item-object .object-img {
+      min-height: 135px !important; } }
+  .commercial-industrial-doors .item-object.show-item-object,
+  .garage-door-motors .item-object.show-item-object,
+  .sectional-doors .item-object.show-item-object {
+    padding-top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 0 !important; }
+    .commercial-industrial-doors .item-object.show-item-object .title,
+    .garage-door-motors .item-object.show-item-object .title,
+    .sectional-doors .item-object.show-item-object .title {
+      padding-right: 60% !important; }
+    .commercial-industrial-doors .item-object.show-item-object .object-img,
+    .garage-door-motors .item-object.show-item-object .object-img,
+    .sectional-doors .item-object.show-item-object .object-img {
+      float: left;
+      width: 40%; }
+    .commercial-industrial-doors .item-object.show-item-object .description,
+    .garage-door-motors .item-object.show-item-object .description,
+    .sectional-doors .item-object.show-item-object .description {
+      display: block;
+      float: left;
+      width: 50%;
+      position: absolute;
+      left: 40%;
+      top: 0;
+      height: 100%;
+      padding-top: 15px; }
+    .commercial-industrial-doors .item-object.show-item-object .btn-details,
+    .garage-door-motors .item-object.show-item-object .btn-details,
+    .sectional-doors .item-object.show-item-object .btn-details {
+      background: url("../images/icon-close.png") no-repeat;
+      height: 22px;
+      width: 23px;
+      right: 3%; }
+  @media all and (min-width: 768px) {
+    .commercial-industrial-doors .item-object:not(:nth-child(3n+1)),
+    .garage-door-motors .item-object:not(:nth-child(3n+1)),
+    .sectional-doors .item-object:not(:nth-child(3n+1)) {
+      margin-right: 2%; } }
+  @media all and (max-width: 767px) {
+    .commercial-industrial-doors .item-object,
+    .garage-door-motors .item-object,
+    .sectional-doors .item-object {
+      width: 100%; } }
+
+.service-repair .section-2 {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 15px; }
+  @media all and (max-width: 991px) {
+    .service-repair .section-2 {
+      margin-top: 5px; } }
+.service-repair .item-block {
+  width: 30%; }
+  @media all and (max-width: 991px) {
+    .service-repair .item-block {
+      width: 100%;
+      background: #f9f5f4;
+      margin-top: 15px;
+      padding: 30px; } }
+  @media all and (max-width: 991px) and (max-width: 767px) {
+    .service-repair .item-block {
+      padding: 15px 0;
+      background: none;
+      margin-top: 0; } }
+
+  @media all and (max-width: 991px) {
+    .service-repair .item-block .text-block {
+      float: right;
+      width: 70%; } }
+  @media all and (max-width: 484px) {
+    .service-repair .item-block .text-block {
+      width: 60%; } }
+  @media all and (max-width: 350px) {
+    .service-repair .item-block .text-block {
+      width: 58%; } }
+  @media all and (max-width: 991px) {
+    .service-repair .item-block .img-block {
+      float: left;
+      height: 100%;
+      margin-right: 30px; } }
+  @media all and (max-width: 767px) {
+    .service-repair .item-block .img-block {
+      margin-right: 20px; } }
+  @media all and (max-width: 767px) {
+    .service-repair .item-block .img-block img {
+      max-height: 70px; } }
+  .service-repair .item-block .title {
+    font: 600 16px open_sans;
+    color: #212121;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 35px 0 28px 0; }
+    @media all and (max-width: 991px) {
+      .service-repair .item-block .title {
+        margin-top: 0;
+        margin-bottom: 18px; } }
+  .service-repair .item-block .description {
+    font: 14px open_sans;
+    color: #212121;
+    text-align: left; }
+    @media all and (max-width: 991px) {
+      .service-repair .item-block .description {
+        letter-spacing: -0.8px;
+        line-height: 22px; } }
+  .service-repair .item-block .call-us {
+    font: 20px open_sans;
+    background: #ee8815;
+    margin: 35px 0 0 0;
+    padding: 16px 50px 16px 16px; }
+    @media all and (max-width: 991px) {
+      .service-repair .item-block .call-us {
+        display: none; } }
+    .service-repair .item-block .call-us:after {
+      right: 12px; }
+
+@media all and (max-width: 515px) {
+  .garage-door-motors .section-1 {
+    height: 600px; } }
+@media all and (max-width: 515px) {
+  .garage-door-motors .section-1 .text-right-section-1.right {
+    top: 38%; } }
+@media all and (max-width: 515px) {
+  .garage-door-motors .section-1 .img-left-section-1 {
+    top: 38%; } }
+
+@media all and (max-width: 1111px) {
+  .garage-door-motors .objects-container .item-object .title {
+    min-height: 90px; } }
+@media all and (max-width: 991px) {
+  .garage-door-motors .objects-container .item-object .title {
+    min-height: 75px; } }
+.garage-door-motors .objects-container .item-object .description {
+  min-height: 190px; }
+  @media all and (max-width: 767px) {
+    .garage-door-motors .objects-container .item-object .description {
+      min-height: 158px; } }
+
+.timber-doors .objects-container .item-object .description {
+  min-height: 200px; }
+  @media all and (max-width: 767px) {
+    .timber-doors .objects-container .item-object .description {
+      min-height: 158px; } }
+
+.commercial-industrial-doors .objects-container .item-object .description {
+  min-height: 200px; }
+  @media all and (max-width: 767px) {
+    .commercial-industrial-doors .objects-container .item-object .description {
+      min-height: 158px; } }
+
+.contacts {
+  display: none;
+  background: #ee8815; }
+  @media all and (max-width: 991px) {
+    .contacts {
+      display: block; } }
+  .contacts .contacts-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .contacts .contacts-container .call-us {
+      padding-right: 25px;
+      margin: 20px -27px 20px 0;
+      max-width: 110px; }
+      @media all and (max-width: 345px) {
+        .contacts .contacts-container .call-us {
+          max-width: 85px;
+          text-align: center; } }
+    .contacts .contacts-container .to-top {
+      display: inline;
+      position: relative;
+      padding-left: 45px;
+      margin: 0;
+      font: 14px open_sans;
+      color: #ffffff;
+      cursor: pointer; }
+      @media all and (max-width: 767px) {
+        .contacts .contacts-container .to-top {
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          color: #ee8815;
+          z-index: 1; } }
+      .contacts .contacts-container .to-top:before {
+        content: "";
+        position: absolute;
+        background: url("../images/icon-pointer.png") no-repeat;
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        height: 31px;
+        width: 18px;
+        top: -6px;
+        left: 0; }
+        @media all and (max-width: 767px) {
+          .contacts .contacts-container .to-top:before {
+            background: url("../images/icon-pointer-orange.png") no-repeat;
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            height: 18px;
+            width: 31px;
+            top: -30px;
+            left: 70px; } }
+    .contacts .contacts-container .phone-number {
+      position: relative;
+      margin: 0;
+      padding-left: 42px;
+      letter-spacing: -0.5px; }
+      .contacts .contacts-container .phone-number:before {
+        content: "";
+        position: absolute;
+        background: url("../images/icon-phone.png") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        top: 0;
+        left: 0; }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+  .footer .nav-bottom {
+    padding: 10px 0 14px 0;
+    background: #ee8815; }
+    @media all and (max-width: 991px) {
+      .footer .nav-bottom {
+        background: #ffffff; } }
+    @media all and (max-width: 767px) {
+      .footer .nav-bottom {
+        padding-bottom: 20px; } }
+    .footer .nav-bottom .nav-content {
+      list-style: none;
+      padding: 0 0 0 193px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-between;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: space-between;
+      -ms-flex-pack: space-between;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      min-height: 80px;
+      position: relative; }
+      .footer .nav-bottom .nav-content:before {
+        content: "";
+        position: absolute;
+        background: url("../images/logo-footer.png") no-repeat;
+        height: 66px;
+        width: 193px;
+        left: 0; }
+        @media all and (max-width: 991px) {
+          .footer .nav-bottom .nav-content:before {
+            background: url("../images/logo.png") no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover; } }
+        @media all and (max-width: 360px) {
+          .footer .nav-bottom .nav-content:before {
+            height: 50px;
+            width: 150px; } }
+      .footer .nav-bottom .nav-content .menu-element {
+        width: 25%; }
+        @media all and (max-width: 767px) {
+          .footer .nav-bottom .nav-content .menu-element {
+            display: none; } }
+        .footer .nav-bottom .nav-content .menu-element a {
+          font: 300 10px open_sans;
+          color: #ffffff;
+          max-width: 100px;
+          display: block;
+          text-align: center;
+          margin: 0 auto; }
+          @media all and (max-width: 991px) {
+            .footer .nav-bottom .nav-content .menu-element a {
+              color: #ee8815;
+              font-size: 11px; } }
+
+/*# sourceMappingURL=style.css.map */
